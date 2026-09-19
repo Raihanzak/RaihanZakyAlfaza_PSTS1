@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSTS1 RaihanZaky</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="bg-blue-500 text-white p-4 shadow-md mx-auto text-center">
+        <h1 class="text-2xl font-bold text-center">Student Creativity Festival</h1>
+        <h2 class="text-lg text-center">Showcase Your Creativity, Skills and Innovative Ideas</h2>
+    </header>
+    <form class="bg-gray-200 text-black p-6 rounded-lg shadow-md max-w-lg mx-auto mt-8">
+        <h2 class="text-xl font-bold mb-4">Registration Form</h2>
+        <label>Full Name</label><br>
+        <input type="text" name="fullname" placeholder="Enter your full name" required><br><br>
+        <label>Class</label><br> 
+        <select name="class" required>
+            <option value="">Select your class</option>
+            <option value="classX">Class X</option>
+            <option value="classXI">Class XI</option>
+            <option value="classXII">Class XII</option>
+        </select><br><br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female" required> Female<br><br>
+        <label>Competition Category</label><br>
+        <select name="competition" required>
+            <option value="">Select a Competition</option>
+            <option value="Web Development">Web Development</option>
+            <option value="IoT Project">IoT Project</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Public Speaking">Public Speaking</option>
+            <option value="Photography">Photography</option>
+        </select><br><br>
+        <label>Participation Type</label><br>
+        <input type="checkbox" name="participation" value="individual" required> Individual<br>
+        <input type="checkbox" name="participation" value="team" required> Team<br><br>
+        <label>Team Name</label><br>
+        <input type="text" name="teamname" placeholder="Enter your team name"><br><br>
+        <label>Contact Number</label><br>
+        <input type="tel" name="contact" placeholder="Enter your contact number" required><br><br>
+        <label>Project Description</label><br>
+        <textarea name="description" rows="5" cols="40" placeholder="Describe your project.." required></textarea><br><br>
+        <input type="submit" value="Register Now"class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 cursor-pointer">
+    </form>
+
+    <h1 class="text-2xl font-bold text-center mt-8">Participant Table</h1>
+    <table class="table-auto border-collapse border border-gray-400 mx-auto mt-4 w-full max-w-4xl shadow-md rounded-lg overflow-hidden">
+        <thead>
+            <tr class="bg-gray-300">
+                <th class="border border-gray-400 px-4 py-2">No</th>
+                <th class="border border-gray-400 px-4 py-2">Name</th>
+                <th class="border border-gray-400 px-4 py-2">Class</th>
+                <th class="border border-gray-400 px-4 py-2">Category</th>
+                <th class="border border-gray-400 px-4 py-2">Team</th>
+                <th class="border border-gray-400 px-4 py-2">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">1</td>
+                <td class="border border-gray-400 px-4 py-2">Raihan Zaky</td>
+                <td class="border border-gray-400 px-4 py-2">Class X</td>
+                <td class="border border-gray-400 px-4 py-2">Web Development</td>
+                <td class="border border-gray-400 px-4 py-2">Rehan Gantenk</td>
+                <td class="border border-gray-400 px-4 py-2">Registered</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">2</td>
+                <td class="border border-gray-400 px-4 py-2">Naufal Nafan</td>
+                <td class="border border-gray-400 px-4 py-2">Class X</td>
+                <td class="border border-gray-400 px-4 py-2">IoT Project</td>
+                <td class="border border-gray-400 px-4 py-2">Nopal Roblok</td>
+                <td class="border border-gray-400 px-4 py-2">Registered</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">3</td>
+                <td class="border border-gray-400 px-4 py-2">Thufail Falah</td>
+                <td class="border border-gray-400 px-4 py-2">Class X</td>
+                <td class="border border-gray-400 px-4 py-2">Graphic Design</td>
+                <td class="border border-gray-400 px-4 py-2">Falah sosik</td>
+                <td class="border border-gray-400 px-4 py-2">Pending</td>
+            </tr><br><br>
+</body>
+</html>
